@@ -2,11 +2,15 @@ package stages;
 
 import entities.User;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontPosture;
+import javafx.scene.text.FontWeight;
 import javafx.stage.Stage;
 import jfxtras.styles.jmetro8.JMetro;
 import util.DB;
@@ -20,6 +24,11 @@ public class AdministratorStage {
 		pane.setPrefSize(800, 600);
 		Scene scene = new Scene(pane);
 		stage.setScene(scene);
+		Label lbAdmin = new Label("Bem vindo Administrador.");
+		lbAdmin.setFont(Font.font("calibri", FontWeight.BLACK, FontPosture.REGULAR, 30));
+		lbAdmin.setLayoutX(10);
+		lbAdmin.setLayoutY(10);
+		pane.getChildren().add(lbAdmin);
 		TableView<User> usersTable = new TableView<User>();
 		usersTable.setLayoutX(10);
 		usersTable.setLayoutY(50);

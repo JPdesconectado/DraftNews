@@ -29,7 +29,7 @@ public class MainStage {
 	btAdmin.setLayoutX(1100);
 	btAdmin.setLayoutY(10);
 	btAdmin.setOnAction(e ->{
-		new AdministratorStage(new Stage());
+		new LoginStage(new Stage());
 	});
 	
 	pane.getChildren().add(btAdmin);
