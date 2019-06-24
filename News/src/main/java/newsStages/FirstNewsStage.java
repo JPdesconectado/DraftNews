@@ -2,6 +2,7 @@ package newsStages;
 
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.ScrollPane.ScrollBarPolicy;
@@ -16,6 +17,8 @@ import javafx.scene.text.FontPosture;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
 import javafx.stage.Stage;
+import jfxtras.styles.jmetro8.JMetro;
+import stages.MainStage;
 import util.Strings;
 
 public class FirstNewsStage {
@@ -37,7 +40,8 @@ public class FirstNewsStage {
 	    Strings.titleNot1.setFill(Color.WHITE);
 	    Strings.titleNot1.setFont(new Font(40));
 	    Strings.subtitleNot1.setFill(Color.WHITE);
-	    Label title = new Label(null, new TextFlow(Strings.titleNot1, new Text(", \n"), Strings.subtitleNot1));
+	    Button btVoltar = new Button("Voltar");
+	    Label title = new Label(null, new TextFlow(new Text("\n"), btVoltar, new Text("\n"), Strings.titleNot1, new Text(", \n"), Strings.subtitleNot1 ));
 	    borderpane.setTop(title);
 	    BorderPane.setAlignment(title, Pos.CENTER);
 	    borderpane.setCenter(imagem);
@@ -53,13 +57,21 @@ public class FirstNewsStage {
 	    Strings.tautor1.setFont(new Font(18));
 	    Strings.tautor1.setFill(Color.AQUA);
 	    imagemEscritor = new ImageView(new Image("https://secure.gravatar.com/avatar/5913b7c5ab46c40079149ea8daf0b3c9?s=128&d=mm&r=g"));
-	    Label label = new Label(null, new TextFlow(Strings.not1, new Text(", \n"), Strings.not11, new Text("\n, \n"), Strings.not12, new Text("\n\n\n\n"), imagemEscritor, 
+	    Label label = new Label(null, new TextFlow(Strings.not1, new Text(", \n"), Strings.not11, new Text("\n, \n"), Strings.not12, new Text("\n\n\n\n"), imagemEscritor,
 	    		Strings.autor1, Strings.tautor1));
 	    borderpane.setBottom(label);
 	    BorderPane.setAlignment(label, Pos.CENTER);
 	    borderpane.setBackground(new Background(new BackgroundFill(Color.rgb(21, 21, 21), null, null)));
 	    Scene scene = new Scene(scrollPane, 1280, 720);
+	    new JMetro(JMetro.Style.LIGHT).applyTheme(scrollPane);
 	    stage.setScene(scene);
+	    
+	    
+	    btVoltar.setOnAction(e ->{
+	    	new MainStage(new Stage());
+	    	stage.close();
+	    });
+	    
 	    stage.show();
 	}
 	

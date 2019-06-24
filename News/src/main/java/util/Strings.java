@@ -45,5 +45,51 @@ public class Strings {
 	
 	public static final Text tautor1 = new Text("@priganiko.");
 	
+	public static final Text titleNot2 = new Text("Matrix | Próximo filme terá direção das irmãs \n"
+												+ "Wachowski, diz site");
+	
+	public static final Text subtitleNot2 = new Text("\n Com Michael B. Jordan como protagonista\n");
+	
+	public static final Text not2 = new Text("Rumores de um próximo filme de Matrix estão rolando há algum tempo — que se \n"
+			+ "intensificaram quando o diretor de John Wick, Chad Stahelski, afirmou que as \n"
+			+ "Irmãs Wachowskis estão trabalhando em um novo filme da franquia.\n\n"
+			+ "Segundo o Movie Web, Lana Wachowski será a diretora e Michael B. Jordan está \n"
+			+ "escalado para estrelar o longa, cujo nome provisório é “Project Ice Cream”. O \n"
+			+ "rumor diz que o longa está em desenvolvimento e que as filmagens começarão \n"
+			+ "em breve em Chicago. O roteiro foi escrito por Zak Penn. \n\n"
+			+ "A Warner ainda não confirmou nenhuma das informações. \n\n"
+			+ "O primeiro Matrix foi lançado em 1999 e mostrava a história de Neo (Keanu \n"
+			+ "Reeves), um programador que acaba descobrindo que o mundo em que vivemos \n"
+			+ "não passa de uma simulação computadorizada e que a Terra, na verdade, passou \n"
+			+ "a ser controlada por máquinas. Duas sequências foram lançadas, em 2002 e 2003,\n"
+			+ "respectivamente.");
+	
+	public static final Text titleNot3 = new Text("Harry Potter: Wizards Unite será lançado \n"
+			+ "no Brasil “nas próximas semanas”");
+	
+	public static final Text subtitleNot3 = new Text("\n Game foi feito pelos criadores de Pokémon Go\n\n");
+	
+	public static final Text not3 = new Text("Jogadores dos EUA, Reino Unido, Austrália e Nova Zelândia já podem baixar \n"
+			+ "Harry Potter: Wizards Unite na App Store e no Google Play. Porém, jogadores \n"
+			+ "brasileiros terão de esperar mais um pouco. \n\n"
+			+ "Segundo a página brasileira do game, o lançamento vai acontecer “nas próximas \n"
+			+ "semanas”. Uma previsão não foi dada até o momento, e novidades serão \n"
+			+ "anunciadas no site. \n\n"
+			+ "Assim como em Pokémon Go, o jogador terá de explorar sua cidade e descobrir \n"
+			+ "lugares de interesse. Só que, em vez de Pokéstops e Ginásios, teremos estufas, \n"
+			+ "florestas, tavernas e portais que escondem segredos. \n\n"
+			+ "Dentre as criaturas que já foram confirmadas no jogo estão os Comensais da \n"
+			+ "Morte, Dementadores, lobisomens e fantasmas. \n\n"
+			+ "Harry Potter: Wizards Unite terá sua própria narrativa. Nela, um evento \n"
+			+ "misterioso faz com que artefatos enfeitiçados, animais fantásticos e criaturas \n"
+			+ "perigosas passem a invadir o mundo dos Trouxas. A partir disso, o Ministério da \n"
+			+ "Magia convoca os bruxos de todos os cantos do mundo para reverter a situação.");
+	
+	public static final Text autor2 = new Text("	Publicado por Cesar Gaglioni\n" + 
+											" 		Veja mais publicações de Cesar Gaglioni ou envie um tweet para ");
+
+public static final Text tautor2 = new Text("@cesargaglioni.");
 }
+
+
 
