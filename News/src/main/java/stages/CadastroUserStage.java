@@ -1,11 +1,11 @@
 package stages;
 
+import entities.User;
+import exceptions.LoginException;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import javafx.scene.control.Alert.AlertType;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import util.DB;
@@ -55,27 +55,25 @@ public class CadastroUserStage {
 		
 		btLogin.setOnMouseClicked(e -> {
 			
-				if (txtUser.getText().equals("admin") ||txtPass.getText().equals("admin")) {
-					new AdministratorStage(new Stage());
-					stage.close();
-				}else {
-					
-					showLoginError();
-				}
+			try {
 				
-			
+				login(txtUser.getText(), txtPass.getText(), stage);
+				
+			} catch (LoginException ex) {
+				System.out.println(ex.getMessage());
+			}
+					
 		});
 
 		btAdd.setOnMouseClicked(e -> {
 			
-			if (txtUser.getText().equals("") || (txtPass.getText().equals(""))) {
-				showRegisterError();
+			try {
 				
-			}else {
-				DB.users.addUser(txtUser.getText(), txtPass.getText());
-				stage.close();	
+				login(txtUser.getText(), txtPass.getText(), stage);
+				
+			} catch (LoginException ex) {
+				System.out.println(ex.getMessage());
 			}
-			
 			
 		});
 		
@@ -88,19 +86,27 @@ public class CadastroUserStage {
 		stage.show();
 	}
 	
-	private void showRegisterError() {
-		Alert alert = new Alert(AlertType.ERROR);
-        alert.setTitle("Erro 2");
-        alert.setHeaderText("Nada inserido");
-        alert.setContentText("Tente novamente.");
-        alert.showAndWait();
-	}
-	
-	private void showLoginError() {
-		Alert alert = new Alert(AlertType.ERROR);
-        alert.setTitle("Erro");
-        alert.setHeaderText("Login e/ou senha inválidos");
-        alert.setContentText("Tente novamente.");
-        alert.showAndWait();
+	private void login(String username, String password, Stage stage) throws LoginException{
+		User user = DB.users.getUser(txtUser.getText());
+		
+		try {
+				if (!user.getPass().equals(txtPass.getText())) {
+					throw new LoginException(1);
+					
+					}
+				
+					
+				
+			} catch (NullPointerException ex) {
+				
+				if (txtUser.getText().equals("") || (txtPass.getText().equals(""))) {
+						throw new LoginException(2);
+						
+					}
+				
+				throw new LoginException(1);
+			}
+					new AdministratorStage(new Stage());
+					stage.close();
 	}
 }

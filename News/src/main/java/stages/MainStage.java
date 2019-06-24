@@ -124,8 +124,14 @@ public class MainStage {
 		imagem2.setScaleY(1);
 	});
 	imagem2.setOnMouseClicked(e  -> {
+		try {
 		new SecondNewsStage(new Stage());
 		stage.close();
+		
+		}catch(Exception ex) {
+			ex.printStackTrace();
+		}
+		
 	});
 	
 	

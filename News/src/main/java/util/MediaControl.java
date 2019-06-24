@@ -1,4 +1,4 @@
-package newsStages;
+package util;
 
 import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
@@ -9,7 +9,8 @@ import javafx.scene.media.MediaView;
 
 public class MediaControl extends BorderPane {
 
-    private MediaPlayer mp;
+    @SuppressWarnings("unused")
+	private MediaPlayer mp;
     private MediaView mediaView;
     public MediaControl(final MediaPlayer mp) {
         this.mp = mp;

@@ -21,6 +21,7 @@ import javafx.scene.text.TextFlow;
 import javafx.stage.Stage;
 import jfxtras.styles.jmetro8.JMetro;
 import stages.MainStage;
+import util.MediaControl;
 import util.Strings;
 
 public class ThirdNewsStage {
