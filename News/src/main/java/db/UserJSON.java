@@ -3,6 +3,8 @@ package db;
 import java.util.ArrayList;
 
 import entities.User;
+import exceptions.AdmException;
+import exceptions.UserException;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
@@ -29,11 +31,46 @@ public class UserJSON implements UserDBInterface {
 	}
 
 	@Override
-	public void changePass(String username, String newPass) {
+	public void changePass(String username, String newPass) throws UserException, AdmException {
+		
+		try {
+			if (newPass.equals("")) {
+				throw new UserException(1);
+			}
+		} catch (NullPointerException ex) {
+			throw new UserException(1);
+		
+		}
+		
 		User user = getUser(username);
+		
+		if (username.equals("admin")) {
+			throw new AdmException();
+		}
+		
 		user.setPass(newPass);
+		
 	}
 
+	@Override
+	public void changeUser(String username, String newUser) throws UserException, AdmException {
+		
+		try {
+			if(newUser.equals("")) {
+				throw new UserException(2);
+			}
+		} catch (NullPointerException ex) {
+			throw new UserException(2);
+		}
+		
+		User user = getUser(username);
+		
+		if (username.equals("admin")) {
+			throw new AdmException();
+		}
+		user.setName(newUser);
+	}
+	
 	@Override
 	public void addUser(String username, String pass) {
 		getUsers().add(new User(username, pass));

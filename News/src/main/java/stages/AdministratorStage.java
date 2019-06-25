@@ -1,6 +1,8 @@
 package stages;
 
 import entities.User;
+import exceptions.AdmException;
+import exceptions.UserException;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
@@ -41,12 +43,28 @@ public class AdministratorStage {
 		colName.setCellValueFactory(new PropertyValueFactory<User, String>("name"));
 		colName.setCellFactory(TextFieldTableCell.forTableColumn());
 		colName.setMinWidth(200);
-
+		colName.setOnEditCommit(e -> {
+			try {
+				DB.users.changeUser(e.getRowValue().getName(), e.getNewValue());
+			} catch (UserException ex) {
+				System.out.println(ex.getMessage());
+			} catch (AdmException ex2) {
+			System.out.println(ex2.getMessage());
+			}
+		});
+		
 		colPass.setCellValueFactory(new PropertyValueFactory<User, String>("pass"));
 		colPass.setCellFactory(TextFieldTableCell.forTableColumn());
 		colPass.setMinWidth(200);
 		colPass.setOnEditCommit(e -> {
-			DB.users.changePass(e.getRowValue().getName(), e.getNewValue());
+			try {
+				DB.users.changePass(e.getRowValue().getName(), e.getNewValue());
+			} catch (UserException ex) {
+				System.out.println(ex.getMessage());
+				
+			} catch (AdmException ex2) {
+				System.out.println(ex2.getMessage());
+			}
 		});
 
 		usersTable.getColumns().add(colName);

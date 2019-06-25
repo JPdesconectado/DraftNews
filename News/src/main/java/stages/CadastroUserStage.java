@@ -2,10 +2,13 @@ package stages;
 
 import entities.User;
 import exceptions.LoginException;
+import exceptions.RegisterException;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import util.DB;
@@ -69,9 +72,9 @@ public class CadastroUserStage {
 			
 			try {
 				
-				login(txtUser.getText(), txtPass.getText(), stage);
+				cadastrar(txtUser.getText(), txtPass.getText(), stage);
 				
-			} catch (LoginException ex) {
+			} catch (RegisterException ex) {
 				System.out.println(ex.getMessage());
 			}
 			
@@ -92,7 +95,6 @@ public class CadastroUserStage {
 		try {
 				if (!user.getPass().equals(txtPass.getText())) {
 					throw new LoginException(1);
-					
 					}
 				
 					
@@ -108,5 +110,27 @@ public class CadastroUserStage {
 			}
 					new AdministratorStage(new Stage());
 					stage.close();
+	}
+	
+	private void cadastrar(String username, String password, Stage stage) throws RegisterException{
+		
+		User user = DB.users.getUser(txtUser.getText());
+		
+		try {
+			if(!user.getPass().equals(txtPass.getText()) || user.getName().equals(txtUser.getText())){
+				throw new RegisterException();
+			}
+			
+		} catch (NullPointerException ex) {
+			DB.users.addUser(txtUser.getText(), txtPass.getText());
+			Alert alert = new Alert(AlertType.INFORMATION);
+			alert.setTitle("Confirmação");
+			alert.setHeaderText("Usuário Cadastrado!");
+			alert.setContentText("Bem-vindo ao sistema.");
+			alert.showAndWait();
+			
+		}
+		
+		
 	}
 }
