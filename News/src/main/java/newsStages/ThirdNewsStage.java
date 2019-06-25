@@ -71,6 +71,7 @@ public class ThirdNewsStage {
         Label video = new Label(null, new TextFlow(mediaControl));
 	    borderpane.setCenter(video);
 	    
+	    stage.getIcons().add(new Image("icon2.png"));
 	    stage.show();
 	}
 	

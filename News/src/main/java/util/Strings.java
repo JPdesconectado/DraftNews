@@ -41,10 +41,9 @@ public class Strings {
 			+ "devem acontecer logo depois do terminado de Esquadrão.");
 	
 	
-	public static final Text autor1 = new Text("	Publicado por Priscila Ganiko\n"
-											+ "			Veja mais publicações de Priscila Ganiko ou envie um tweet para ");
+	public static final Text autor1 = new Text("	Publicado por Priscila Ganiko ");
 	
-	public static final Text tautor1 = new Text("@priganiko.");
+	public static final Text tautor1 = new Text("- @priganiko.");
 	
 	public static final Text titleNot2 = new Text("Matrix | Próximo filme terá direção das irmãs \n"
 												+ "Wachowski, diz site");
@@ -86,10 +85,9 @@ public class Strings {
 			+ "perigosas passem a invadir o mundo dos Trouxas. A partir disso, o Ministério da \n"
 			+ "Magia convoca os bruxos de todos os cantos do mundo para reverter a situação.");
 	
-	public static final Text autor2 = new Text("	Publicado por Cesar Gaglioni\n" + 
-											" 		Veja mais publicações de Cesar Gaglioni ou envie um tweet para ");
+	public static final Text autor2 = new Text("	Publicado por Cesar Gaglioni ");
 
-	public static final Text tautor2 = new Text("@cesargaglioni.");
+	public static final Text tautor2 = new Text("- @cesargaglioni.");
 	
 	public static final Text titleNot4 = new Text("Batman | Steven Seagal quase interpretou o \n"
 												+ "herói no filme de 89");
@@ -208,12 +206,54 @@ public class Strings {
 			+ "impossível por enfrentarmos um período tão conturbado atualmente, é possível \n"
 			+ "encontrarmos a paz no meio de tanta guerra — basta querermos.");
 	
-	public static final Text autor3 = new Text("	Publicado por Tayná Garcia\n"
-			+ "			Veja mais publicações ou envie um tweet para ");
+	public static final Text autor3 = new Text("	Publicado por Tayná Garcia ");
 
-	public static final Text tautor3 = new Text("@otaykugarcia.");
+	public static final Text tautor3 = new Text("- @otaykugarcia.");
 	
 	public static final Text titleNot8 = new Text("A Praia | Filme de 2000 terá série de TV");
+	
+	public static final Text subtitleNot8 = new Text("Um prequel que se passa 20 anos depois \n\n");
+	
+	public static final Text not8 = new Text("Conversando com o The Independent, o cineasta Danny Boyle revelou que está \n"
+			+ "desenvolvendo uma série de TV no mesmo universo do filme A Praia, longa \n"
+			+ "que dirigiu em 2000. \n\n"
+			
+			+ "A série será um prequel, porém, para confundir a cabeça dos espectadores, será \n"
+			+ "um prelúdio que se passa 20 anos depois do filme original, o que é impossível de \n"
+			+ "entender. “É pra f*der a cabeça“, disse Boyle. \n\n"
+			
+			+ "A Praia foi estrelado por Leonardo DiCaprio. Baseado no livro de Alex Garland, o \n"
+			+ "filme mostra um grupo de jovens que encontra uma praia paradisíaca na Tailândia \n"
+			+ "onde vive uma comunidade secreta. Logo eles percebem que nem tudo é o que \n"
+			+ "parece. \n\n"
+			+ "O projeto de série de TV não tem data de estreia.");
+	
+	public static final Text titleNot9 = new Text("O Rei Leão tem a segunda melhor pré-venda\n"
+										+ "de ingressos do ano nos EUA ");
+	
+	public static final Text subtitleNot9 = new Text("Só ficou atrás de Vingadores: Ultimato \n\n");
+	
+	public static final Text not9 = new Text("Na última segunda-feira (24), a Disney abriu a pré-venda de ingressos de O Rei \n"
+			+ "Leão nos EUA. \n\n"
+			
+			+ "O sucesso era esperado, e, segundo o Deadline, já é a segunda maior venda do \n"
+			+ "ano, perdendo apenas para Vingadores: Ultimato. O segundo recorde da nova \n"
+			+ "versão de O Rei Leão é a de maior venda para um filme familiar em 2019. \n\n"
+			
+			+ "Números exatos ainda não foram divulgados.\n\n"
+			
+			+ "O Rei Leão foi originalmente lançado em 1994 e é um dos filmes animados de \n"
+			+ "maior faturamento em Hollywood, com US$ 968,5 milhões. A animação, que é \n"
+			+ "inspirada em Hamlet, de  William Shakespeare, conta a história de Simba, um \n"
+			+ "leão que se vê em meio a muitas intrigas familiares. \n\n"
+			
+			+ "James Earl Jones retorna como Mufasa nesta nova versão, enquanto John \n"
+			+ "Oliver (Zazu),  Seth Rogen (Pumba), Billy Eichner (Timão), Chiwetel Ejiofor (Scar) \n"
+			+ "e Beyoncé (Nala) também compõe o elenco da nova versão. \n\n"
+			
+			+ "O Rei Leão estreia em 19 de julho de 2019. O filme recebeu se primeiro trailer e \n"
+			+ "se tornou o segundo mais visto da história. Mas, afinal, o novo Rei Leão é ou não \n"
+			+ "um live-action?");
 }
 
 

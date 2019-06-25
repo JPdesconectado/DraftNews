@@ -9,6 +9,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontPosture;
@@ -25,6 +26,7 @@ public class AdministratorStage {
 		AnchorPane pane = new AnchorPane();
 		pane.setPrefSize(800, 600);
 		Scene scene = new Scene(pane);
+		stage.getIcons().add(new Image("icon2.png"));
 		stage.setScene(scene);
 		Label lbAdmin = new Label("Bem vindo Administrador.");
 		lbAdmin.setFont(Font.font("calibri", FontWeight.BLACK, FontPosture.REGULAR, 30));

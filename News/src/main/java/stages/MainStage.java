@@ -23,9 +23,11 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import jfxtras.styles.jmetro8.JMetro;
+import newsStages.EightNewsStage;
 import newsStages.FirstNewsStage;
 import newsStages.FiveNewsStage;
 import newsStages.FourNewsStage;
+import newsStages.NineNewsStage;
 import newsStages.SecondNewsStage;
 import newsStages.SevenNewsStage;
 import newsStages.SixNewsStage;
@@ -40,6 +42,8 @@ public class MainStage {
 
 	AnchorPane pane = new AnchorPane();
 	pane.setPrefSize(1280, 720);
+	stage.getIcons().add(new Image("icon2.png"));
+	stage.setTitle(Strings.title);
 	Scene scene = new Scene(pane);
 	stage.setScene(scene);
 	BackgroundImage back = new BackgroundImage(new Image("bg1.jpg"),  BackgroundRepeat.REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, BackgroundSize.DEFAULT);
@@ -277,8 +281,8 @@ public class MainStage {
 	});
 	imagem8.setOnMouseClicked(e  -> {
 		
-		//new SixNewsStage(new Stage());
-		//stage.close();
+		new EightNewsStage(new Stage());
+		stage.close();
 	});
 	
 	pane.getChildren().add(imagem8);
@@ -298,8 +302,8 @@ public class MainStage {
 	});
 	imagem9.setOnMouseClicked(e  -> {
 		
-		//new SixNewsStage(new Stage());
-		//stage.close();
+		new NineNewsStage(new Stage());
+		stage.close();
 	});
 	
 	pane.getChildren().add(imagem9);
@@ -416,7 +420,19 @@ public class MainStage {
 	label8.setFont(Font.font("calibri", FontWeight.BLACK, FontPosture.REGULAR, 14));
 	pane.getChildren().add(label8);
 	
+	Text label9N = Strings.titleNot9;
+	label9N.setFill(Color.WHITE);
+	label9N.setLayoutX(835);
+	label9N.setLayoutY(610);
+	label9N.setFont(Font.font("calibri", FontWeight.BLACK, FontPosture.REGULAR, 16));
+	pane.getChildren().add(label9N);
 	
+	Text label9 = new Text("Cinema");
+	label9.setFill(Color.DARKRED);
+	label9.setLayoutX(835);
+	label9.setLayoutY(590);
+	label9.setFont(Font.font("calibri", FontWeight.BLACK, FontPosture.REGULAR, 14));
+	pane.getChildren().add(label9);
 	
 	new JMetro(JMetro.Style.LIGHT).applyTheme(pane);
 	stage.show();

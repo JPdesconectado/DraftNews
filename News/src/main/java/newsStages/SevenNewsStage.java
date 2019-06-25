@@ -66,6 +66,7 @@ public class SevenNewsStage {
 	    	stage.close();
 	    });
 	    
+	    stage.getIcons().add(new Image("icon2.png"));
 	    stage.show();
 	}
 	

@@ -9,6 +9,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Alert.AlertType;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import util.DB;
@@ -23,6 +24,7 @@ public class CadastroUserStage {
 		AnchorPane pane = new AnchorPane();
 		pane.setPrefSize(160, 200);
 		Scene scene = new Scene(pane);
+		stage.getIcons().add(new Image("icon2.png"));
 		stage.setScene(scene);
 		
 		txtUser = new TextField();
