@@ -18,7 +18,6 @@ public class CadastroUserStage {
 	private Button btAdd, btLogin;
 	private TextField txtUser;
 	private PasswordField txtPass;
-	
 	public CadastroUserStage(Stage stage) {
 		
 		AnchorPane pane = new AnchorPane();
@@ -61,6 +60,7 @@ public class CadastroUserStage {
 			try {
 				
 				login(txtUser.getText(), txtPass.getText(), stage);
+				stage.close();
 				
 			} catch (LoginException ex) {
 				System.out.println(ex.getMessage());
@@ -108,8 +108,11 @@ public class CadastroUserStage {
 				
 				throw new LoginException(1);
 			}
-					new AdministratorStage(new Stage());
-					stage.close();
+					Alert alert = new Alert(AlertType.INFORMATION);
+					alert.setTitle("Confirmação");
+					alert.setHeaderText("Usuário Logado!");
+					alert.setContentText("Bem-vindo ao sistema.");
+					alert.showAndWait();
 	}
 	
 	private void cadastrar(String username, String password, Stage stage) throws RegisterException{
@@ -128,6 +131,7 @@ public class CadastroUserStage {
 			alert.setHeaderText("Usuário Cadastrado!");
 			alert.setContentText("Bem-vindo ao sistema.");
 			alert.showAndWait();
+			
 			
 		}
 		
