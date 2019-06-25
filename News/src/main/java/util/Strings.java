@@ -133,6 +133,87 @@ public class Strings {
 			+ "Disney+ chegando no fim do ano. No Brasil, os principais são Netflix, Amazon \n"
 			+ "Prime Video, HBO Go e Globoplay.");
 	
+	public static final Text titleNot6 = new Text("Vingadores: Ultimato | Relançamento trará \n"
+										+ "tributo a Stan Lee, diz site");
+	
+	public static final Text subtitleNot6 = new Text("Além de cena deletada com o Hulk\n\n");
+	
+	public static final Text not6 = new Text("Segundo o MCU Cosmic, o relançamento de Vingadores: Ultimato nos cinemas \n"
+			+ "americanos trará um tributo para Stan Lee no meio dos créditos. \n\n"
+			+ "Além disso, o site diz que veremos uma cena deletada com o Hulk. O conteúdo da \n"
+			+ "homenagem e da sequência excluída não foram revelados ou confirmados até o \n"
+			+ "momento. \n\n"
+			+ "Vingadores: Ultimato arrecadou US$ 2,7 bilhões ao redor de todo o mundo.");
+	
+	public static final Text titleNot7 = new Text("Dororo | Crítica");
+	
+	public static final Text subtitleNot7 = new Text("O anime apresenta uma história trágica influenciada por elementos e \n"
+									+ "criaturas do folclore japonês\n\n");
+	
+	public static final Text not7 = new Text("Se você acompanha o universo dos mangás e animes, já deve ter percebido que \n"
+			+ "muitas animações japonesas acabam repetindo arquétipos e sendo “mais do \n"
+			+ "mesmo”. Mas então vem uma obra que decide jogar essas ideias para o alto e \n"
+			+ "proporcionar uma experiência diferente. E Dororo é uma dessas obras. \n\n"
+			
+			+ "Baseado no mangá de Osamu Tezuka, um dos pioneiros do mangá moderno, \n"
+			+ "Dororo conta uma história de fantasia que se passa durante o Período Sengoku no \n"
+			+ "Japão feudal, uma época em que conflitos brutais entre samurais eram \n"
+			+ "constantes. Nesse contexto, monstros sobrenaturais e demônios do folclore \n"
+			+ "japonês existem e até concedem pactos em troca de desejos. \n\n"
+			
+			+ "O protagonista Hyakkimaru é uma vítima de um desses pactos, um feito por seu \n"
+			+ "próprio pai que ansiava por poder. Em troca de ser o líder de uma região, ele \n"
+			+ "ofereceu o corpo do filho para os demônios devorarem. \n\n"
+			
+			+ "Com essa premissa trágica, o anime se desenrola com Hyakkimaru usando \n"
+			+ "próteses de madeira em todo o corpo dilacerado, em uma jornada de vingança \n"
+			+ "para recuperar os seus membros ao lado de Dororo, um garotinho órfão \n"
+			+ "destemido. A princípio, o papel de mocinho e vilão parece bem delineado, não é? \n"
+			+ " Mas não se deixe enganar. \n\n"
+			
+			+ "Em um cenário de guerras e mortes, as nossas percepções sobre os personagens \n"
+			+ "e seus objetivos mudam a cada episódio – o que parecia tão certo rapidamente \n"
+			+ "muda de direção e nos vemos pegos dentro dos dilemas que cada um enfrenta. \n\n"
+			
+			+ "As camadas de complexidade não aparecem apenas no protagonista, e até \n"
+			+ "mesmo personagens que aparecem em um ou dois episódios são aprofundados \n"
+			+ "até certo nível, dando consistência e veracidade ao universo apresentado. \n\n"
+			
+			+ "Junto da jornada principal de Hyakkimaru, a dupla de viajantes enfrenta monstros \n"
+			+ "que aterrorizam cidades em episódios isolados. A maioria deles é inspirada em \n"
+			+ "criaturas de lendas japonesas, como as youkai, que são uma classe de criaturas \n"
+			+ "sobrenaturais do folclore japonês. \n\n"
+			
+			+ "A influência da cultura presente na história do Japão não se limita aos \n"
+			+ "monstros. A trama também apresenta referências aos aspectos políticos \n"
+			+ "nipônicos de 1960 e, principalmente, ao budismo. Mas não pense que tantas \n"
+			+ "características orientais podem atrapalhar o entendimento da história, pelo \n"
+			+ "contrário. O público ocidental consegue conhecer mais sobre a história do Japão,\n"
+			+ "principalmente sua cultura. \n\n"
+			
+			+ "O anime traça vários caminhos diferentes do mangá, o que vai surpreender os \n"
+			+ "veteranos que já se aventuraram nas páginas preto e branco da obra de Tezuka. \n"
+			+ "Algumas diferenças são para melhor e outras para pior, mas nada fica inexplicado \n"
+			+ "ou sem sentido. \n\n"
+			
+			+ "Dororo não é uma obra qualquer. É uma história sobre pessoas corrompidas,\n"
+			+ "guerras inacabadas e, principalmente, sobre a linha que separa a humanidade da\n"
+			+ " monstruosidade. O anime acaba se tornando uma produção quase que necessária \n"
+			+ "para quem é fã da cultura japonesa, não apenas por sua história, mas por seu \n"
+			+ "simbolismo e significância. É uma experiência única que consegue trazer risadas\n"
+			+ " e desconforto em um único episódio, deixando o espectador submerso em seus \n"
+			+ "questionamentos. \n\n"
+			
+			+ "No fim, o que eu mais aprendi ao assistir Dororo é que, apesar de parecer \n"
+			+ "impossível por enfrentarmos um período tão conturbado atualmente, é possível \n"
+			+ "encontrarmos a paz no meio de tanta guerra — basta querermos.");
+	
+	public static final Text autor3 = new Text("	Publicado por Tayná Garcia\n"
+			+ "			Veja mais publicações ou envie um tweet para ");
+
+	public static final Text tautor3 = new Text("@otaykugarcia.");
+	
+	public static final Text titleNot8 = new Text("A Praia | Filme de 2000 terá série de TV");
 }
 
 
