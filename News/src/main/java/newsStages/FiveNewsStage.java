@@ -2,6 +2,7 @@ package newsStages;
 
 import java.awt.Desktop;
 import java.io.File;
+import java.net.URL;
 import java.util.Optional;
 
 import javafx.geometry.Pos;
@@ -46,8 +47,10 @@ public class FiveNewsStage {
 			if (result.get() == ButtonType.OK){
 				
 				try {
+					
+					URL str = FiveNewsStage.class.getClassLoader().getResource("2018-report.pdf");
 
-		    		File pdfFile = new File("C:\\Users/Shino/git/ProjectNews/News/src/main/resources", "2018-report.pdf");
+		    		File pdfFile = new File(str.getPath());
 		    		if (pdfFile.exists()) {
 
 		    			if (Desktop.isDesktopSupported()) {
