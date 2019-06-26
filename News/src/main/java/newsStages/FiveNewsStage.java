@@ -47,7 +47,7 @@ public class FiveNewsStage {
 				
 				try {
 
-		    		File pdfFile = new File("C:\\Users/Shino/git/ProjectNews/News/src/main/resources/2018-report.pdf");
+		    		File pdfFile = new File("C:\\Users/Shino/git/ProjectNews/News/src/main/resources", "2018-report.pdf");
 		    		if (pdfFile.exists()) {
 
 		    			if (Desktop.isDesktopSupported()) {

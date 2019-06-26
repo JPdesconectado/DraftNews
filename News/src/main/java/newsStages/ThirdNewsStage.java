@@ -63,7 +63,7 @@ public class ThirdNewsStage {
 	    	stage.close();
 	    });
 	    
-	    Media media = new Media ("file:/C:/Users/Shino/git/ProjectNews/News/src/main/resources/video/HP.mp4");
+	    Media media = new Media(getClass().getClassLoader().getResource("video/HP.mp4").toExternalForm());
         MediaPlayer mediaPlayer = new MediaPlayer(media);
         mediaPlayer.setAutoPlay(true);
         
